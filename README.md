@@ -14,7 +14,7 @@
 }
 ```
 
-- Sabse pahle ye pata karo ke mouse rectangle par aaya hai and move hua ✅
+- Sabse pahle ye pata karo ke mouse rectangle par aaya hai and move hua (First identify if mouse has hovered over rectangle or not) ✅
 
 ``` 
 var rect = document.querySelector("#center");
@@ -26,7 +26,7 @@ rect.addEventListener("mousemove" , function(){
 
 > Use *details* parameter to get mouse location when it is move in Rectangle.
 
-- ab ye calculate karo ke hum center se left par hai ya center se right par hai ✅
+- ab ye calculate karo ke hum center se left par hai ya center se right par hai (Now calculate is it either on left of center or right of center) ✅
 
 ``` 
 rect.addEventListener("mousemove" , function(details){
@@ -42,7 +42,7 @@ rect.addEventListener("mousemove" , function(details){
 }); 
 ```
 
-- ab ye calculate karo ke hum center se kinta left par hai, jitna left par hai utni intensity se color red lagao [same for the rightside ]✅
+- ab ye calculate karo ke hum center se kinta left par hai, jitna left par hai utni intensity se color red lagao [same for the rightside ] (Now calculate how far cursor is from the center, increase the intensity of the red color depending on the distance [apply same for rightside])✅
 
 ``` 
 var redcol = gsap.utils.mapRange(0, rectloaction.width/2, 255, 1, insiderectval); 
